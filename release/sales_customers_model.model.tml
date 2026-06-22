@@ -1,0 +1,24 @@
+obj_id: sales_customers_model
+model:
+  name: Sales Customers Model
+  model_tables:
+  - name: sales_customers
+    obj_id: sales_customers
+  columns:
+  - name: Customer ID
+    column_id: sales_customers::customerID
+    properties:
+      column_type: ATTRIBUTE
+  - name: First Name
+    column_id: sales_customers::first_name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Email
+    column_id: sales_customers::email_address
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: false
+    spotter_config:
+      is_spotter_enabled: false
