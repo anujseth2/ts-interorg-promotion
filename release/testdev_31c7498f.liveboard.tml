@@ -1,0 +1,60 @@
+obj_id: Testdev-31c7498f
+liveboard:
+  name: Test dev
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: country and Total Count customerID by gender
+      tables:
+      - id: sales_customers
+        name: sales_customers
+        obj_id: sales_customers
+      search_query: '[gender] count [customerID] [country]'
+      answer_columns:
+      - name: Number of customerID
+      - name: country
+      - name: gender
+      table:
+        table_columns:
+        - column_id: Number of customerID
+          show_headline: false
+        - column_id: country
+          show_headline: false
+        - column_id: gender
+          show_headline: false
+        ordered_column_ids:
+        - gender
+        - country
+        - Number of customerID
+        client_state: ''
+        client_state_v2: '{"tableVizPropVersion": "V1"}'
+      chart:
+        type: HEATMAP
+        chart_columns:
+        - column_id: Number of customerID
+        - column_id: country
+        - column_id: gender
+        axis_configs:
+        - x:
+          - gender
+          y:
+          - country
+          size: Number of customerID
+        client_state: ''
+        client_state_v2: '{"version": "V4DOT2","chartProperties": {"responsiveLayoutPreference": "AUTO_ON","chartSpecific":
+          {"pivotSummariesState": {}}},"columnProperties": [{"columnId": "gender","columnProperty": {"kpiColumnProperties":
+          {"showSparkline": true,"showComparisonDate": true,"showCurrentDateLabel": true,"showPreviousDateLabel": true,"showPreviousValue":
+          true}}},{"columnId": "Number of customerID","columnProperty": {"kpiColumnProperties": {"showSparkline": true,"showComparisonDate":
+          true,"showCurrentDateLabel": true,"showPreviousDateLabel": true,"showPreviousValue": true}}},{"columnId": "Measure
+          names","columnProperty": {"kpiColumnProperties": {"showSparkline": true,"showComparisonDate": true,"showCurrentDateLabel":
+          true,"showPreviousDateLabel": true,"showPreviousValue": true}}},{"columnId": "Measure values","columnProperty":
+          {"kpiColumnProperties": {"showSparkline": true,"showComparisonDate": true,"showCurrentDateLabel": true,"showPreviousDateLabel":
+          true,"showPreviousValue": true}}},{"columnId": "country","columnProperty": {}}],"axisProperties": [{"id": "123c7934-b344-4bcc-a8eb-421183819456","properties":
+          {"axisType": "Y","linkedColumns": ["country"],"isOpposite": false}},{"id": "dc0bcfc1-78b9-43e2-a62d-7963af725c39","properties":
+          {"axisType": "X","linkedColumns": ["gender"]}}],"systemSeriesColors": [{"serieName": "Number of customerID","color":
+          "#2E75F0"},{"serieName": "country","color": "#48d1e0"}]}'
+      display_mode: CHART_MODE
+      dynamic_name: country and Total Count customerID by gender
+  layout:
+    tiles:
+    - visualization_id: Viz_1
